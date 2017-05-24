@@ -11,8 +11,8 @@
      *
      */
 
-    require dir['vendor'] . '/autoload.php';
-     
+    require dir['vendor'] . 'autoload.php';
+    
     
     /**
      * -------------------------------------------------------------------------
@@ -24,7 +24,7 @@
      * 
      */
     
-    $env = new Dotenv\Dotenv(__DIR__, '/../.env');
+    $env = new Dotenv\Dotenv(dir['bootstrap'] . dir['raiz'], '.env');
     $env->load();
     
     
@@ -62,9 +62,13 @@
      * além de padronizar o template.
      */
      
-    $loader = new Twig_Loader_Filesystem(dir['views']);
-    $twig   = new Twig_Environment($loader);
+    $load   = new Twig_Loader_Filesystem(dir['views']);
+    $twig   = new Twig_Environment($load);
 
-    
+    echo $twig->render('template/template.html', [
+        'title' => 'simplePHP - Twig Template',
+        'name'  => 'Maurício Porfírio',
+        'datas' => \App\Models\Example::all()
+    ]);
     
 
