@@ -65,7 +65,7 @@
     $load   = new Twig_Loader_Filesystem(dir['views']);
     $twig   = new Twig_Environment($load);
 
-    echo $twig->render('template/template.html', [
+    echo $twig->render('template/template.twig', [
         'title' => 'simplePHP - Twig Template',
         'name'  => 'Maurício Porfírio'
         //'datas' => \App\Models\Example::all()

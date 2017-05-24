@@ -8,9 +8,6 @@
         'bootstrap' => __DIR__ . '/bootstrap/',
         'config'    => __DIR__ . '/config/',
         'public'    => __DIR__ . '/public/',
-        'bower'     => __DIR__ . '/public/bower_components/',
-        'css'       => __DIR__ . '/public/css/',
-        'img'       => __DIR__ . '/public/img/',
         'vendor'    => __DIR__ . '/vendor/'
     ]);
     
