@@ -11,7 +11,8 @@
      *
      */
 
-    require dir['vendor'] . 'autoload.php';
+
+     require dir['vendor'] . 'autoload.php';
     
     
     /**
@@ -24,8 +25,9 @@
      * 
      */
     
-    $env = new Dotenv\Dotenv(dir['bootstrap'] . dir['raiz'], '.env');
-    $env->load();
+    
+     $env = new Dotenv\Dotenv(dir['bootstrap'] . dir['raiz'], '.env');
+     $env->load();
     
     
     /**
@@ -38,20 +40,21 @@
      * 
      */ 
      
-    $db = require dir['config'] . '/database.php';
+    
+     $db = require dir['config'] . 'database.php';
 
-    $cfg = \ActiveRecord\Config::instance();
-    $cfg->set_model_directory(dir['models']);
-    $cfg->set_connections(['development' => 
+     $cfg = \ActiveRecord\Config::instance();
+     $cfg->set_model_directory(dir['models']);
+     $cfg->set_connections(['development' => 
        $db['mysql']['driver']   . '://' . 
        $db['mysql']['username'] . ':' . 
        $db['mysql']['password'] . '@' . 
        $db['mysql']['host']     . '/' . 
        $db['mysql']['database'] . '?charset=' . 
        $db['mysql']['charset']
-    ]);
+     ]);
      
-     
+    
     /**
      * -------------------------------------------------------------------------
      * Twig Template PHP
@@ -62,13 +65,21 @@
      * além de padronizar o template.
      */
      
-    $load   = new Twig_Loader_Filesystem(dir['views']);
-    $twig   = new Twig_Environment($load);
+     
+     $load   = new Twig_Loader_Filesystem(dir['views']);
+     $twig   = new Twig_Environment($load);
 
-    echo $twig->render('template/template.twig', [
-        'title' => 'simplePHP - Twig Template',
-        'name'  => 'Maurício Porfírio'
-        //'datas' => \App\Models\Example::all()
-    ]);
     
-
+    /**
+     * -------------------------------------------------------------------------
+     * Registrando Renderização
+     * -------------------------------------------------------------------------
+     * 
+     * Require as páginas que são configuradas em twig/web.php para serem 
+     * renderizadas com Twig Template
+     */
+    
+     
+     require dir['twig'] . 'web.php';
+    
+    

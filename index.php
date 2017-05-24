@@ -8,6 +8,7 @@
         'bootstrap' => __DIR__ . '/bootstrap/',
         'config'    => __DIR__ . '/config/',
         'public'    => __DIR__ . '/public/',
+        'twig'      => __DIR__ . '/twig/',
         'vendor'    => __DIR__ . '/vendor/'
     ]);
     
