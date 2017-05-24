@@ -67,8 +67,8 @@
 
     echo $twig->render('template/template.html', [
         'title' => 'simplePHP - Twig Template',
-        'name'  => 'Maurício Porfírio',
-        'datas' => \App\Models\Example::all()
+        'name'  => 'Maurício Porfírio'
+        //'datas' => \App\Models\Example::all()
     ]);
     
 
