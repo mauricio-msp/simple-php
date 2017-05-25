@@ -5,6 +5,7 @@
         'app'         => __DIR__ . '/app/',
         'models'      => __DIR__ . '/app/models/',
         'views'       => __DIR__ . '/app/views/',
+        'web'         => __DIR__ . '/app/views_c/web/',
         'bootstrap'   => __DIR__ . '/bootstrap/',
         'config'      => __DIR__ . '/config/',
         'public'      => __DIR__ . '/public/',

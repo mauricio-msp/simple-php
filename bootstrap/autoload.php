@@ -75,11 +75,11 @@
      * Registrando Renderização
      * -------------------------------------------------------------------------
      * 
-     * Require as páginas que são configuradas em twig/web.php para serem 
+     * Require as páginas que são configuradas em views_c/web/view.php para serem 
      * renderizadas com Twig Template
      */
     
      
-     require dir['config'] . 'view.php';
+     require dir['web'] . 'view.php';
     
     
