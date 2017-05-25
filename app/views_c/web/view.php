@@ -9,7 +9,7 @@
      * com seu(s) repectivo(s) dado(s) que deseja tratar na(s) mesma(s).
      */
 
-    echo $twig->render('template/template.twig', [
+    echo $twig->render('template/welcome.html', [
         'title' => 'simplePHP - Twig Template',
         'alunos' => [
             ['nome' => 'Mauricio', 'email' => 'mauriciosporfirio@gmail.com'],
