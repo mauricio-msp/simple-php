@@ -1,6 +1,6 @@
 <?php
 
-
+    
     /**
      * -------------------------------------------------------------------------
      * Twig Template Web 
@@ -15,7 +15,8 @@
         'alunos' => [
             ['nome' => 'Mauricio', 'email' => 'mauriciosporfirio@gmail.com'],
             ['nome' => 'Claudia', 'email' => 'claudiamfabris@gmail.com'],
-            ['nome' => 'Dhonata', 'email' => 'dhonatafreitas@gmail.com']
+            ['nome' => 'Dhonata', 'email' => 'dhonatafreitas@gmail.com'],
+            ['nome' => 'Álvaro', 'email' => 'alvaro.lourenco46@gmail.com']
         ]
     ]);
     
@@ -23,4 +24,3 @@
     
     // Retorna a renderização
     return $twig;
-

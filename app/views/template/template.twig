@@ -9,7 +9,7 @@
     </head>
     <body>
         {% for aluno in alunos %}
-            <p class="text-primary"> Meu nome é {{ aluno.nome }} e meu email é {{ aluno.email }} </p>
+            <p class="text-primary"> Meu nome é {{ aluno.nome|upper }} e meu email é {{ aluno.email }} </p>
         {% endfor %}    
     </body>
 </html>

@@ -1,15 +1,14 @@
 <?php
     
     define('dir', [
-        'raiz'      => '/../',
-        'app'       => __DIR__ . '/app/',
-        'models'    => __DIR__ . '/app/models/',
-        'views'     => __DIR__ . '/app/views/',
-        'bootstrap' => __DIR__ . '/bootstrap/',
-        'config'    => __DIR__ . '/config/',
-        'public'    => __DIR__ . '/public/',
-        'twig'      => __DIR__ . '/twig/',
-        'vendor'    => __DIR__ . '/vendor/'
+        'raiz'        => '/../',
+        'app'         => __DIR__ . '/app/',
+        'models'      => __DIR__ . '/app/models/',
+        'views'       => __DIR__ . '/app/views/',
+        'bootstrap'   => __DIR__ . '/bootstrap/',
+        'config'      => __DIR__ . '/config/',
+        'public'      => __DIR__ . '/public/',
+        'vendor'      => __DIR__ . '/vendor/'
     ]);
     
     

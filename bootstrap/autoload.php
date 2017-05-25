@@ -26,7 +26,7 @@
      */
     
     
-     $env = new Dotenv\Dotenv(dir['bootstrap'] . dir['raiz'], '.env');
+     $env = new \Dotenv\Dotenv(dir['bootstrap'] . dir['raiz'], '.env');
      $env->load();
     
     
@@ -66,8 +66,8 @@
      */
      
      
-     $load   = new Twig_Loader_Filesystem(dir['views']);
-     $twig   = new Twig_Environment($load);
+     $load   = new \Twig_Loader_Filesystem(dir['views']);
+     $twig   = new \Twig_Environment($load);
 
     
     /**
@@ -80,6 +80,6 @@
      */
     
      
-     require dir['twig'] . 'web.php';
+     require dir['config'] . 'view.php';
     
     
