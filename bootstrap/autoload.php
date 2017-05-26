@@ -91,8 +91,8 @@
      * Registrando Renderização
      * -------------------------------------------------------------------------
      * 
-     * Require as páginas que são configuradas em views_c/web/view.php para serem 
-     * renderizadas com Twig Template
+     * Require as páginas que são configuradas em routes/web.php para serem 
+     * renderizadas com Twig Template E roteadas com o Klein
      */
     
      
