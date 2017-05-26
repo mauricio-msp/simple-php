@@ -1,13 +1,15 @@
 {
     "name": "mauricio-msp/simple-php",
-    "description": "Aplicação simples em PHP ",
-    "keywords": ["app", "application", "php", "simple"],
+    "description": "Aplicação simples com PHP 7",
+    "keywords": ["app", "application", "php", "php7", "simple", "project"],
     "license": "MIT",
     "type": "project",
-    "author": [
+    "authors": [
       {
         "name": "Mauricio Porfirio",
-        "email": "mauriciosporfirio@gmail.com"
+        "email": "mauriciosporfirio@gmail.com",
+        "homepage": "https://about.me/mauricioporfirio",
+        "role": "Creator/Developer"
       }
     ],
     "require": {

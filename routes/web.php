@@ -12,19 +12,20 @@
      
      $klein->respond('GET', '/', function($request, $response, $service, $app) {
         echo $app->twig->render('template/welcome.html', [
-            'ano'   => date('Y'),
+            'ano' => date('Y'),
         ]);
      });
      
      
-     /**
-      * ------------------------------------------------------------------------
-      * Web Route 404
-      * ------------------------------------------------------------------------
-      * 
-      * Em caso de você requisitar uma url inválida e/ou inexistente ou ser 
-      * direcionado para um lugar que não exista a página de erro será solicitada.
-      */
+    /**
+     * -------------------------------------------------------------------------
+     * Web Route 404
+     * -------------------------------------------------------------------------
+     * 
+     * Em caso de você requisitar uma url inválida e/ou inexistente ou ser 
+     * direcionado para um lugar que não exista a página de erro será solicitada.
+     */
+     
      
      $klein->onHttpError(function($code){
         switch ($code):
