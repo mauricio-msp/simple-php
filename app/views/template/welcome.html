@@ -2,13 +2,72 @@
 
 <html lang="pt-br">
     <head>
-        <title>{{ title }}</title>
+        <title> Bem-vindo :: simple-php </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width = device-width, initial-scale =1.0, maximum-scale = 1.0, user-scalable = no" />
+        
+        <!-- Components -->
+        <link rel="stylesheet" type="text/css" href="public/bower_components/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="public/bower_components/font-awesome/css/font-awesome.min.css" />
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:100,600" />
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                font-family: 'Raleway', sans-serif;
+            }
+
+            .col-lg-6 {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                float: none;
+                margin-top: 10%;
+            }
+
+            .col-lg-6 > .panel {
+                border: 1px solid #CCC;
+            }
+
+            .col-lg-6 > .panel > .panel-heading {
+                background-color: #F7F7F5;
+            }
+
+            .col-lg-6 > .panel > .panel-heading > h3 {
+               font-size: 30pt;
+                color: #1d9d74;
+            }
+
+            .col-lg-6 > .panel > .panel-body > .alert > span {
+                font-size: 18pt;
+                font-weight: bold;
+            }
+            
+            .col-lg-6 > .panel > .panel-footer > p {
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
-        {% for aluno in alunos %}
-            <p> nome: {{ aluno.nome|upper }} | email: {{ aluno.email }}</p>
-        {% endfor %}
+        
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="text-center"> Bem-vindo </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="alert alert-success" role="alert">
+                        <i class="fa fa-thumbs-o-up fa-2x"></i> &nbsp; <span> Parabéns! </span> 
+                        <h5> A aplicação foi instalada com sucesso. Uhuu! </h5>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <p class="text-muted text-center">Copyright &copy; {{ ano }} - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+        
     </body>
 </html>
