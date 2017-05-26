@@ -1,0 +1,33 @@
+html, body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.col-lg-6 {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    margin-top: 10%;
+}
+
+.col-lg-6 > .panel {
+    border: 1px solid #CCC;
+}
+
+.col-lg-6 > .panel > .panel-heading {
+    background-color: #F7F7F5;
+}
+
+.col-lg-6 > .panel > .panel-heading > h3 {
+    font-size: 30pt;
+    color: #1d9d74;
+}
+
+.col-lg-6 > .panel > .panel-body > .alert > span {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.col-lg-6 > .panel > .panel-footer > p {
+    font-weight: bold;
+}
