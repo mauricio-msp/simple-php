@@ -15,8 +15,6 @@
      require dir['vendor'] . 'autoload.php';
     
      
-     $url = new \Src\Url\Url();
-     $url->load();
     /**
      * -------------------------------------------------------------------------
      * PHP Dotenv
@@ -59,17 +57,33 @@
     
     /**
      * -------------------------------------------------------------------------
-     * Twig Template PHP
+     * Klein | Twig Template PHP
      * -------------------------------------------------------------------------
      * 
-     * Twig é um motor de template para a linguagem de programação PHP. Onde
-     * podemos tratar dados em uma página de uma maneira melhor e mais otimizada,
-     * além de padronizar o template.
+     * Klein é um gerenciador de rotas fácil e flexível
+     * 
+     * Twig é um motor de template para a linguagem de programação PHP. 
+     * 
+     * -------------------------------------------------------------------------
+     * Vamos integrar o Twig ao Klein para que possa renderizar nossas páginas
+     * com o método do Twig e usando o roteamento do Klein.
      */
      
      
-     $load   = new \Twig_Loader_Filesystem(dir['views']);
-     $twig   = new \Twig_Environment($load);
+     $base  = dirname(filter_input(INPUT_SERVER,'PHP_SELF'));
+
+     if(ltrim($base, '/')):
+        $_SERVER['REQUEST_URI'] = substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), strlen($base));
+     endif;
+
+     $klein = new \Klein\Klein();
+     
+     $klein->respond(function($request, $response, $service, $app){
+        $app->register('twig', function(){
+           $load = new \Twig_Loader_Filesystem(dir['views']);
+           return new \Twig_Environment($load);
+        });
+     });
 
     
     /**
@@ -82,6 +96,17 @@
      */
     
      
-     require dir['web'] . 'view.php';
+     require dir['routes'] . 'web.php';
     
+     
+    /**
+     * -------------------------------------------------------------------------
+     * Dispatch
+     * ------------------------------------------------------------------------- 
+     * 
+     * Despacha as rotas criadas em routes/web.php
+     */
+     
+     
+     $klein->dispatch();
     

@@ -14,6 +14,7 @@
         "php": "^7.0",
         "php-activerecord/php-activerecord": "^1.1",
         "vlucas/phpdotenv": "^2.4",
+        "klein/klein": "^2.1",
         "twig/twig": "^2.3"
     },
     "autoload": {
