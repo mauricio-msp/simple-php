@@ -4,7 +4,7 @@
     "keywords": ["app", "application", "php", "simple"],
     "license": "MIT",
     "type": "project",
-    "authors": [
+    "author": [
       {
         "name": "Mauricio Porfirio",
         "email": "mauriciosporfirio@gmail.com"
