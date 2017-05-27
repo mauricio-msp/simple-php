@@ -6,8 +6,8 @@
      * -------------------------------------------------------------------------
      *
      * Composer fornece um carregador de classe conveniente e gerado automaticamente
-     * Para nossa aplicação. Para que não tenhamos que se preoucpar com o 
-     * carregamento de qualquer das nossas classes "manualmente".
+     * para nossa aplicação, assim não temos que nos preocupar com o 
+     * carregamento de qualquer classe "manualmente".
      *
      */
 

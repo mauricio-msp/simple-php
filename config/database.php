@@ -7,9 +7,9 @@ return [
      * Conexões de banco de dados
      * ------------------------------------------------- -----------------------
      *
-     * Aqui estão cada uma das conexões de banco de dados configuradas para seu 
-     * aplicativo. Exemplos de configuração de cada plataforma de banco de dados.
-     *
+     * Aqui estão cada uma das conexões de banco de dados, configuradas para seu 
+     * aplicativo. Estes são exemplos de configuração de cada plataforma de 
+     * banco de dados.
      */
 
     'mysql' => [

@@ -5,8 +5,8 @@
      * Web Routes
      * ------------------------------------------------- -----------------------
      *
-     * Aqui é onde você pode registrar rotas da web para sua aplicação. Estes
-     * Rotas são carregadas pelo ServiceProvider.
+     * Aqui é onde você pode registrar rotas da web para sua aplicação. Essas
+     * rotas são carregadas pelo ServiceProvider.
      */
 
      
@@ -22,8 +22,8 @@
      * Web Route 404
      * -------------------------------------------------------------------------
      * 
-     * Em caso de você requisitar uma url inválida e/ou inexistente ou ser 
-     * direcionado para um lugar que não exista a página de erro será solicitada.
+     * Em caso de requisição de uma url inválida, inexistente ou ser 
+     * direcionado para um lugar que não exista, a página de erro será solicitada.
      */
      
      

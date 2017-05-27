@@ -18,8 +18,8 @@
      * Requerindo carregamento da aplicação
      * -------------------------------------------------------------------------
      *
-     * Irá carregar a aplicação para que possamos executá-lo e enviar
-     * As respostas de volta para o navegador.
+     * Irá carregar a aplicação para que possamos executá-la e enviar
+     * as respostas de volta para o navegador.
      *
      */
    
