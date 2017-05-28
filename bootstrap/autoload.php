@@ -21,7 +21,7 @@
      * -------------------------------------------------------------------------
      * 
      * Carrega variavéis do ambiente de desenvolvimento com valores que só o 
-     * prório desenvolvedor tenha acesso.
+     * próprio desenvolvedor tenha acesso.
      * 
      */
     
@@ -35,8 +35,9 @@
      * PHP ActiveRecord
      * -------------------------------------------------------------------------
      * 
-     * PHP ActiveRecord é um (orm) com padrão de projeto encontrado em softwares 
-     * que armazenam seus dados em Banco de dados relacionais.
+     * PHP ActiveRecord é um ORM(Object-relational mapping) com  padrão de 
+     * projeto encontrado em softwares que armazenam seus dados em Banco de 
+     * dados relacionais.
      * 
      */ 
      
@@ -92,7 +93,7 @@
      * -------------------------------------------------------------------------
      * 
      * Require as páginas que são configuradas em routes/web.php para serem 
-     * renderizadas com Twig Template E roteadas com o Klein
+     * renderizadas com Twig Template e roteadas com o Klein
      */
     
      
