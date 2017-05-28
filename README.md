@@ -1,3 +1,5 @@
+![logo - simple-php - github](https://cloud.githubusercontent.com/assets/13602785/26530140/4f0a0372-43a5-11e7-8d9b-80e102fbc6bc.png)
+
 # Sobre o simple-php
 
 ### Aplicação open-source, simples e rápida com PHP 7
