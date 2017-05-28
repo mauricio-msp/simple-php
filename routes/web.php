@@ -10,10 +10,8 @@
      */
 
      
-     $klein->respond('GET', '/', function($request, $response, $service, $app) {
-        echo $app->twig->render('template/welcome.html', [
-            'ano' => date('Y'),
-        ]);
+     $klein->respond('GET', '/', function() {
+        include dir['views'] . 'template/welcome.twig';
      });
      
      
@@ -30,7 +28,7 @@
      $klein->onHttpError(function($code){
         switch ($code):
             case 404:
-               include dir['views'] . 'template/error.html';
+               include dir['views'] . 'template/erro.twig';
             break;
         endswitch;
      });
