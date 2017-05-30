@@ -10,8 +10,14 @@
      */
 
      
-     $klein->respond('GET', '/', function() {
-        include dir['views'] . 'template/welcome.twig';
+     $klein->respond('GET', '/', function($request, $response, $service, $app) {
+        echo $app->twig->render('template/welcome.twig', [
+            'title' => 'simple-php',
+            'data'  => date('Y'),
+            'asset' => url('/public')
+        ]);
+        
+        die(); // Mata qualquer processo que vem após
      });
      
      
@@ -20,15 +26,17 @@
      * Web Route 404
      * -------------------------------------------------------------------------
      * 
-     * Em caso de requisição de uma url inválida, inexistente ou ser 
-     * direcionado para um lugar que não exista, a página de erro será solicitada.
+     * A página de erro esta sempre sendo solicitada, então para evitar erros,
+     * no final de qualquer requisição de páginas você deve usar o die() como
+     * no exemplo acima. OK!
      */
      
      
-     $klein->onHttpError(function($code){
-        switch ($code):
-            case 404:
-               include dir['views'] . 'template/erro.twig';
-            break;
-        endswitch;
+     $klein->respond(function($request, $response, $service, $app){
+        echo $app->twig->render('template/erro.twig', [
+            'title' => 'Erro 404',
+            'data'  => date('Y'),
+            'asset' => url('/public'),
+            'base'  => url()
+        ]); 
      });

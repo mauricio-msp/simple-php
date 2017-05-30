@@ -2,16 +2,16 @@
 
 <html lang="pt-br">
     <head>
-        <title> Erro 404  </title>
+        <title> {{ title }}  </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width = device-width, initial-scale =1.0, maximum-scale = 1.0, user-scalable = no" />
         
         <!-- Favicon -->
-        <link rel="shorcut icon" href="public/img/not-found.png" />
+        <link rel="shorcut icon" href="{{ asset }}/img/not-found.png" />
         
         <!-- Components -->
-        <link rel="stylesheet" type="text/css" href="public/bower_components/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="public/bower_components/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ asset }}/bower_components/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ asset }}/bower_components/font-awesome/css/font-awesome.min.css" />
         
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
@@ -62,12 +62,18 @@
                             Página não encontrada <br /> 
                             <span> A url requisitada ou o endereço acessado não existe. <br /> Por favor, volte ao inicio.</span>
                         </p>
+                        
+                        <p class="text-center">
+                            <a class="btn btn-default btn-lg" href="{{ base }}" role="button">
+                                <i class="fa fa-arrow-left"></i> Voltar ao inicio
+                            </a>
+                        </p>
                     </div>
                     
                     <hr />
                     
                     <p class="text-center"> 
-                        Copyright <i class="fa fa-copyright"></i> - Todos os direitos reservados <br />
+                        Copyright <i class="fa fa-copyright"></i> {{ data }} - Todos os direitos reservados <br />
                         <span class="text-muted"> Designed by Maurício Porfírio </span>
                     </p>
                 </div>
