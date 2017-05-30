@@ -17,7 +17,7 @@
             'asset' => url('/public')
         ]);
         
-        die(); // Mata qualquer processo que vem após
+        die(); 
      });
      
      
