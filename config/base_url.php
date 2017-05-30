@@ -2,8 +2,11 @@
 
     /**
      * -------------------------------------------------------------------------
-     * Monta/Estrutura a base da url do(s) projeto(s).
+     * Estrutura URL
      * -------------------------------------------------------------------------
+     * 
+     * Monta a estrutura da URL utilizando como parâmetros o protocolo, o host,
+     * a porta(caso exista) e nome do projeto do desenvolvedor.
      *  
      * @param type $redirect 
      */
@@ -23,6 +26,8 @@
         // SCRIPT_NAME | nome do diretório do projeto
         $script_name     = str_replace('/index.php', '', filter_input(INPUT_SERVER, 'SCRIPT_NAME'));
         
-        // Estrutura da url
+        // Estrutura da URL
         return "{$server_protocol}://{$server_name}{$server_port}{$script_name}{$redirect}";
     }
+    
+    
