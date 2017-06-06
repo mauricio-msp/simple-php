@@ -15,7 +15,7 @@
     "require": {
         "php": "^7.0",
         "php-activerecord/php-activerecord": "^1.1",
-        "mauricio-msp/routing" : "^1.0",
+        "mauricio-msp/routing" : "^1.1",
         "vlucas/phpdotenv": "^2.4"
     },
     "autoload": {

@@ -2,16 +2,16 @@
 
 <html lang="pt-br">
     <head>
-        <title> {{ title }}  </title>
+        <title> {{ simple['title'] }}  </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width = device-width, initial-scale =1.0, maximum-scale = 1.0, user-scalable = no" />
         
         <!-- Favicon -->
-        <link rel="shorcut icon" href="{{ asset }}/img/icone - not-found.png" />
+        <link rel="shorcut icon" href="{{ simple['asset'] }}/img/icone - not-found.png" />
         
         <!-- Components -->
-        <link rel="stylesheet" type="text/css" href="{{ asset }}/bower_components/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="{{ asset }}/bower_components/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ simple['asset'] }}/bower_components/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ simple['asset'] }}/bower_components/font-awesome/css/font-awesome.min.css" />
         
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
@@ -64,7 +64,7 @@
                         </p>
                         
                         <p class="text-center">
-                            <a class="btn btn-default btn-lg" href="{{ base }}" role="button">
+                            <a class="btn btn-default btn-lg" href="{{ simple['base'] }}" role="button">
                                 <i class="fa fa-arrow-left"></i> Voltar ao inicio
                             </a>
                         </p>
@@ -73,7 +73,7 @@
                     <hr />
                     
                     <p class="text-center"> 
-                        Copyright <i class="fa fa-copyright"></i> {{ data }} - Todos os direitos reservados <br />
+                        Copyright <i class="fa fa-copyright"></i> {{ simple['data'] }} - Todos os direitos reservados <br />
                         <span class="text-muted"> Designed by Maurício Porfírio </span>
                     </p>
                 </div>

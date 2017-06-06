@@ -7,9 +7,11 @@ class HomeController extends \Src\Http\Controller {
     
     public function view() {
         echo $this->service->render('template/welcome.twig', [
-            'title' => 'simple-php',
-            'data'  => date('Y'),
-            'asset' => url('/public')
+            'simple' => [
+                'title' => 'simple-php',
+                'data'  => date('Y'),
+                'asset' => url('/public')
+            ]
         ]);
         
         exit();

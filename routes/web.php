@@ -9,7 +9,7 @@
      */
 
      
-     $simple->map('GET', '/', 'HomeController@view');
+     $simple->get('/', 'HomeController@view');
     
      
     /**
@@ -22,4 +22,4 @@
      */
      
      
-     $simple->map('GET', '*', 'ErroController@view');
+     $simple->get('*', 'ErroController@view');
