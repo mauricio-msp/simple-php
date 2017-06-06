@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace app\models;
 
 
 class Example extends \ActiveRecord\Model {
