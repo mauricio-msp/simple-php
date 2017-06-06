@@ -61,10 +61,10 @@
      * Route extends Klein.php(Klein é um gerenciador de rotas fácil e flexível)
      * -------------------------------------------------------------------------
      * 
-     * Rota que adpata o modo de chamada do controller usando o gerenciador de 
+     * Rota que adapta o modo de chamada do controller usando o gerenciador de 
      * rotas Klein. Há duas maneiras: 
      * 
-     * - Modo adpatado: 'HomeController@action'.
+     * - Modo adaptado: 'HomeController@action'.
      * - Modo padrão: function() { // trecho de código }.
      * 
      * -------------------------------------------------------------------------
