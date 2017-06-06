@@ -58,16 +58,16 @@
     
     /**
      * -------------------------------------------------------------------------
-     * Klein | Twig Template PHP
+     * Route extends Klein.php(Klein é um gerenciador de rotas fácil e flexível)
      * -------------------------------------------------------------------------
      * 
-     * Klein é um gerenciador de rotas fácil e flexível
+     * Rota que adpata o modo de chamada do controller usando o gerenciador de 
+     * rotas Klein. Há duas maneiras: 
      * 
-     * Twig é um motor de template para a linguagem de programação PHP. 
+     * - Modo adpatado: 'HomeController@action'.
+     * - Modo padrão: function() { // trecho de código }.
      * 
      * -------------------------------------------------------------------------
-     * Vamos integrar o Twig ao Klein para que possa renderizar nossas páginas
-     * com o método do Twig e usando o roteamento do Klein.
      */
      
      
@@ -77,14 +77,7 @@
         $_SERVER['REQUEST_URI'] = substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), strlen($base));
      endif;
 
-     $klein = new \Klein\Klein();
-     
-     $klein->respond(function($request, $response, $service, $app){
-        $app->register('twig', function(){
-           $load = new \Twig_Loader_Filesystem(dir['views']);
-           return new \Twig_Environment($load);
-        });
-     });
+     $simple = new \Src\Routing\Route();
 
     
     /**
@@ -109,5 +102,5 @@
      */
      
      
-     $klein->dispatch();
+     $simple->dispatch();
     

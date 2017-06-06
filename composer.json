@@ -1,7 +1,7 @@
 {
     "name": "mauricio-msp/simple-php",
     "description": "Aplicação simples com PHP 7",
-    "keywords": ["app", "application", "php", "php7", "simple", "project"],
+    "keywords": ["app", "application", "php", "php7", "simple", "project", "web"],
     "license": "MIT",
     "type": "project",
     "authors": [
@@ -15,16 +15,15 @@
     "require": {
         "php": "^7.0",
         "php-activerecord/php-activerecord": "^1.1",
-        "vlucas/phpdotenv": "^2.4",
-        "klein/klein": "^2.1",
-        "twig/twig": "^2.3"
+        "mauricio-msp/routing" : "^1.0",
+        "vlucas/phpdotenv": "^2.4"
     },
     "autoload": {
         "psr-4": {
-           "App\\": "app/" 
+           "app\\": "app/" 
         },
         "files": [
-            "config/base_url.php"
+            "config/http.php"
         ]
     },
     "scripts": {

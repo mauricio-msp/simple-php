@@ -5,21 +5,12 @@
      * Web Routes
      * ------------------------------------------------- -----------------------
      *
-     * Aqui é onde você pode registrar rotas da web para sua aplicação. Essas
-     * rotas são carregadas pelo ServiceProvider.
+     * Aqui é onde você pode registrar rotas da web para sua aplicação.
      */
 
      
-     $klein->respond('GET', '/', function($request, $response, $service, $app) {
-        echo $app->twig->render('template/welcome.twig', [
-            'title' => 'simple-php',
-            'data'  => date('Y'),
-            'asset' => url('/public')
-        ]);
-        
-        die(); 
-     });
-     
+     $simple->map('GET', '/', 'HomeController@view');
+    
      
     /**
      * -------------------------------------------------------------------------
@@ -27,16 +18,8 @@
      * -------------------------------------------------------------------------
      * 
      * A página de erro esta sempre sendo solicitada, então para evitar erros,
-     * no final de qualquer requisição de páginas você deve usar o die() como
-     * no exemplo acima. OK!
+     * no final de qualquer requisição de páginas você deve usar o exit()
      */
      
      
-     $klein->respond(function($request, $response, $service, $app){
-        echo $app->twig->render('template/erro.twig', [
-            'title' => 'Erro 404',
-            'data'  => date('Y'),
-            'asset' => url('/public'),
-            'base'  => url()
-        ]); 
-     });
+     $simple->map('GET', '*', 'ErroController@view');

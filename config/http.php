@@ -12,7 +12,7 @@
      */
 
 
-    function url($redirect = NULL){
+    function url($redirect = NULL) : string {
         
         // SERVER_PROTOCOL | http
         $server_protocol = strtolower(preg_replace('/[^a-zA-Z\$]/', '', filter_input(INPUT_SERVER, 'SERVER_PROTOCOL')));
