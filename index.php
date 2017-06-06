@@ -3,6 +3,7 @@
     define('dir', [
         'raiz'        => '/../',
         'app'         => __DIR__ . '/app/',
+        'controllers' => __DIR__ . '/app/controllers/',
         'models'      => __DIR__ . '/app/models/',
         'views'       => __DIR__ . '/app/views/',
         'bootstrap'   => __DIR__ . '/bootstrap/',
