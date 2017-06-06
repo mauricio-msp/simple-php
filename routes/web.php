@@ -23,3 +23,5 @@
      
      
      $simple->get('*', 'ErroController@view');
+
+
