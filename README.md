@@ -28,6 +28,8 @@ Você deve configurar dois arquivos para que não haja erros em sua aplicação.
 ###### vendor/mauricio-msp/routing/src/Http/View.php
 
 ``` php 
+<?php
+
     // Deverá fazer a seguinte alteração nesse trecho do código
 
     public function render($view, array $data = []) {
@@ -43,6 +45,8 @@ Você deve configurar dois arquivos para que não haja erros em sua aplicação.
 ###### vendor/mauricio-msp/routing/src/Routing/Route.php
 
 ``` php 
+<?php
+
     // Deverá fazer a seguinte alteração nos trechos do código
 
     public function get($path = '*', $callback = NULL) {
