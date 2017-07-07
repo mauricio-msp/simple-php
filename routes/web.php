@@ -18,7 +18,7 @@
      * -------------------------------------------------------------------------
      * 
      * A página de erro esta sempre sendo solicitada, então para evitar erros,
-     * no final de qualquer requisição de páginas você deve usar o exit()
+     * no final de qualquer requisição de páginas você deve usar o exit.
      */
      
      
