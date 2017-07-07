@@ -64,7 +64,7 @@
      * Rota que adapta o modo de chamada do controller usando o gerenciador de 
      * rotas Klein. Há duas maneiras: 
      * 
-     * - Modo adaptado: 'HomeController@action'.
+     * - Modo adaptado: 'Home@action'.
      * - Modo padrão: function() { // trecho de código }.
      * 
      * -------------------------------------------------------------------------
