@@ -1,5 +1,6 @@
 <?php
 
+
     /**
      * -------------------------------------------------------------------------
      * Estrutura URL
@@ -8,11 +9,9 @@
      * Monta a estrutura da URL utilizando como parâmetros o protocolo, o host,
      * a porta(caso exista) e nome do projeto do desenvolvedor.
      *  
-     * @param type $redirect 
      */
 
-
-    function url($redirect = NULL) : string {
+    function url() : string {
         
         // SERVER_PROTOCOL | http
         $server_protocol = strtolower(preg_replace('/[^a-zA-Z\$]/', '', filter_input(INPUT_SERVER, 'SERVER_PROTOCOL')));
@@ -26,8 +25,21 @@
         // SCRIPT_NAME | nome do diretório do projeto
         $script_name     = str_replace('/index.php', '', filter_input(INPUT_SERVER, 'SCRIPT_NAME'));
         
-        // Estrutura da URL
-        return "{$server_protocol}://{$server_name}{$server_port}{$script_name}{$redirect}";
+        // Estrutura da URL BASE
+        return "{$server_protocol}://{$server_name}{$server_port}{$script_name}/";
+    }
+    
+    
+    /**
+     * -------------------------------------------------------------------------
+     * Acesso ao diretório PUBLIC
+     * -------------------------------------------------------------------------
+     * 
+     * Retorna o endereço de acesso a pasta "public" 
+     */
+    
+    function asset() : string {
+        return url() . 'public';
     }
     
     

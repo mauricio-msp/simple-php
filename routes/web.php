@@ -9,7 +9,7 @@
      */
 
      
-     $simple->get('/', 'HomeController@view');
+     $simple->get('/', 'WelcomeController@view');
     
      
     /**

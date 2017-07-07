@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
+     <head>
         <title> {{ simple['title']|upper }} </title>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width = device-width, initial-scale =1.0, maximum-scale = 1.0, user-scalable = no" />
+        <meta name="viewport" content="width = device-width, initial-scale =1, maximum-scale = 1, user-scalable = no" />
         
         <!-- Favicon -->
-        <link rel="shorcut icon" href="{{ simple['asset'] }}/img/icone - simple-php.png" />
+        <link rel="shorcut icon" href="{{ simple['asset']}}/img/icone - simple-php.png" />
         
         <!-- Components -->
         <link rel="stylesheet" type="text/css" href="{{ simple['asset'] }}/bower_components/bootstrap/css/bootstrap.min.css" />
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="jumbotron">
+                   <div class="jumbotron">
                         <h1 class="text-center"> <i class="fa fa-thumbs-o-up"></i> Parabéns </h1>
                         <p class="text-center"> 
                             Aplicação instalada com sucesso. Uhuu! <br />
@@ -43,7 +43,7 @@
                     <hr />
                     
                     <p class="text-center"> 
-                        Copyright <i class="fa fa-copyright"></i> {{ simple['data'] }} - Todos os direitos reservados <br />
+                        Copyright <i class="fa fa-copyright"></i> {{ simple['ano'] }} - Todos os direitos reservados <br />
                         <span class="text-muted"> Designed by Maurício Porfírio </span>
                     </p>
                 </div>
@@ -52,4 +52,3 @@
         
     </body>
 </html>
-
