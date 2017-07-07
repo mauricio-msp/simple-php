@@ -19,62 +19,11 @@ simple-php é uma aplicação voltada para projetos com um grau de complexidade 
 $ composer create-project mauricio-msp/simple-php [my-app-name] --prefer-dist
 ```
 
-O simple-php vai instalar todas as dependências necessárias e arquivos necessários.
+O simple-php vai instalar todas as dependências e arquivos necessários.
 
-# Após a instalação
+### Veja também a aplicação ROUTING(complemento do simple-php).
 
-Você deve configurar dois arquivos para que não haja erros em sua aplicação.
-
-###### vendor/mauricio-msp/routing/src/Http/View.php
-
-``` php 
-<?php
-
-    // Deverá fazer a seguinte alteração nesse trecho do código
-
-    public function render($view, array $data = []) {
-        $this->loader = new \Twig_Loader_Filesystem(dir['views']);
-        $this->twig   = new \Twig_Environment($this->loader);
-        
-        return $this->twig->render($view, $data);
-    }
-    
-    // Adicionar o diretório onde estarão as views da sua aplicação usando o dir['views']
-```
-
-###### vendor/mauricio-msp/routing/src/Routing/Route.php
-
-``` php 
-<?php
-
-    // Deverá fazer a seguinte alteração nos trechos do código
-
-    public function get($path = '*', $callback = NULL) {
-       // Linha 28
-       $controller = 'app\\controllers\\' . $params[0];
-    }
-    
-    public function post($path = '*', $callback = NULL) {
-       // Linha 46
-       $controller = 'app\\controllers\\' . $params[0];
-    }
-    
-    public function put($path = '*', $callback = NULL) {
-       // Linha 64
-       $controller = 'app\\controllers\\' . $params[0];
-    }
-    
-    public function delete($path = '*', $callback = NULL) {
-       // Linha 82
-       $controller = 'app\\controllers\\' . $params[0];
-    }
-    
-    // Adiocionar o namespace de acordo com a aplicação do simple-php
-```
-
-# Para mais informações 
-
-Visite [mauricio-msp/routing](https://github.com/mauricio-msp/routing).
+[mauricio-msp/routing](https://github.com/mauricio-msp/routing).
 
 # Licença
 
