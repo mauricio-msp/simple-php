@@ -9,7 +9,7 @@
      */
 
      
-     $simple->get('/', 'WelcomeController@view');
+     $simple->get('/', 'Welcome@view');
     
      
     /**
@@ -22,6 +22,6 @@
      */
      
      
-     $simple->get('*', 'ErroController@view');
+     $simple->get('*', 'Erro@view');
 
 

@@ -26,7 +26,7 @@
         $script_name     = str_replace('/index.php', '', filter_input(INPUT_SERVER, 'SCRIPT_NAME'));
         
         // Estrutura da URL BASE
-        return "{$server_protocol}://{$server_name}{$server_port}{$script_name}/";
+        return "{$server_protocol}://{$server_name}{$server_port}{$script_name}";
     }
     
     
@@ -39,7 +39,7 @@
      */
     
     function asset() : string {
-        return url() . 'public';
+        return url() . '/public';
     }
     
     
