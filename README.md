@@ -23,9 +23,9 @@ O simple-php vai instalar todas as dependências e arquivos necessários.
 
 ***
 
-#### Veja também a aplicação ROUTING(complemento do simple-php).
+> #### Veja também a aplicação ROUTING(complemento do simple-php).
 
-[mauricio-msp/routing](https://github.com/mauricio-msp/routing).
+> [mauricio-msp/routing](https://github.com/mauricio-msp/routing).
 
 ***
 
