@@ -21,14 +21,6 @@ $ composer create-project mauricio-msp/simple-php [my-app-name] --prefer-dist
 
 O simple-php vai instalar todas as dependências e arquivos necessários.
 
-***
-
-#### Veja também a aplicação ROUTING(complemento do simple-php).
-
-[mauricio-msp/routing](https://github.com/mauricio-msp/routing).
-
-***
-
 # Licença
 
 O simple-php é uma aplicação open-source licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
