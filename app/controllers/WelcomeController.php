@@ -3,18 +3,14 @@
 namespace app\controllers;
 
 
-class WelcomeController extends \Src\Http\Controller {
+class WelcomeController extends \app\controllers\Controller {
     
     public function view() {
-        echo $this->app->render('template/welcome.html', [
-            'simple' => [
-                'title' => 'simple-php',
-                'asset' => asset(),
-                'ano'   => date('Y'),
-            ]
+        echo $this->twig->render('template/welcome.html', [
+            'title' => 'simple-php',
+            'asset' => asset(),
+            'ano'   => date('Y'),
         ]);
-        
-        exit;
     }
     
 }

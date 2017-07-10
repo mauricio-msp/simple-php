@@ -58,35 +58,39 @@
     
     /**
      * -------------------------------------------------------------------------
-     * Route extends Klein.php(Klein é um gerenciador de rotas fácil e flexível)
+     * DRouter
      * -------------------------------------------------------------------------
      * 
-     * Rota que adapta o modo de chamada do controller usando o gerenciador de 
-     * rotas Klein. Há duas maneiras: 
+     * DRouter é um gerenciador de rotas fácil, simples e flexível, com o 
+     * intuito de ser utilizado em aplicações web pequenas, como a nossa.
      * 
-     * - Modo adaptado: 'Home@action'.
-     * - Modo padrão: function() { // trecho de código }.
-     * 
+     */
+    
+
+     $app = new \DRouter\App();
+     
+     
+    /**
      * -------------------------------------------------------------------------
+     * Requerindo Configurações do Roteamento
+     * ------------------------------------------------------------------------- 
+     * 
+     * Require as configurações setadas em routes/config.php, onde as "views"
+     * irão ter acessos as configurações setadas no arquivo.
+     * 
      */
      
      
-     $base  = dirname(filter_input(INPUT_SERVER,'PHP_SELF'));
-
-     if(ltrim($base, '/')):
-        $_SERVER['REQUEST_URI'] = substr(filter_input(INPUT_SERVER, 'REQUEST_URI'), strlen($base));
-     endif;
-
-     $simple = new \Src\Routing\Route();
-
+     require dir['routes'] . 'config.php';
     
+     
     /**
      * -------------------------------------------------------------------------
      * Registrando Renderização
      * -------------------------------------------------------------------------
      * 
      * Require as páginas que são configuradas em routes/web.php para serem 
-     * renderizadas com Twig Template e roteadas com o Klein
+     * renderizadas com Twig Template e roteadas com o DRouter.
      */
     
      
@@ -95,12 +99,12 @@
      
     /**
      * -------------------------------------------------------------------------
-     * Dispatch
+     * Run
      * ------------------------------------------------------------------------- 
      * 
-     * Despacha as rotas criadas em routes/web.php
+     * Executa todas as rotas criadas em routes/web.php
      */
      
      
-     $simple->dispatch();
+     $app->run();
     

@@ -9,7 +9,7 @@
      */
 
      
-     $simple->get('/', 'Welcome@view');
+     $app->get('/', 'app\controllers\WelcomeController:view')->setName('welcome');
     
      
     /**
@@ -17,11 +17,12 @@
      * Web Route 404
      * -------------------------------------------------------------------------
      * 
-     * A página de erro esta sempre sendo solicitada, então para evitar erros,
-     * no final de qualquer requisição de uma página você deverá usar o exit.
+     * Página de erro404(personalizada).
      */
      
      
-     $simple->get('*', 'Erro@view');
+     $app->notFound(function(){
+        include dir['views'] . 'exception/erro.html';
+     });
 
 
