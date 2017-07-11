@@ -7,7 +7,7 @@
         <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no" />
         
         <!-- Favicon -->
-        <link rel="shorcut icon" href="public/img/simple-icons/page_not_found.png" />
+        <link rel="shorcut icon" href="public/img/simple-icons/erro404-example.png" />
         
         <!-- Components -->
         <link rel="stylesheet" type="text/css" href="public/bower_components/bootstrap/css/bootstrap.min.css" />
@@ -18,59 +18,65 @@
         
         <!-- Css -->
         <style type="text/css">
-            html, body {
-                font-family: 'Raleway', sans-serif;
+            html, body { 
+                font-family: 'Raleway', sans-serif; 
             }
 
-            .container {
-                margin-top: 30px;
+            .container { 
+                margin-top: 70px; 
             }
-
-            .row {
-                padding: 30px;
-            }
-
-            .col-lg-8 {
+            
+            /* COLUNA EXTERNA */
+            .center-box {
                 margin: 0 auto;
                 float: none;
             }
-
-            .btn {
-                background-color: #0F0050;
-                border: 1px solid #0F0050;
-                color: #FFF;
-
-                transition: all ease-in-out 0.2s;
+            /* FIM DA COLUNA */
+            
+            .jumbotron { 
+                text-align: center; 
             }
-
-            .btn:hover,
-            .btn:focus {
-                background-color: #FFF;
-                border: 1px solid #0F0050;
-                color: #0F0050;
+            
+            /* COLUNAS INTERNAS NO JUMBOTRON */
+            .col-md-5, .col-md-7 { 
+                height: 275px; 
             }
+            
+            .col-md-5 { 
+                padding: 5px; 
+            }
+            
+            .col-md-5 > img { 
+                width: 250px 
+            }
+            
+            .col-md-7 { 
+                padding: 25px; 
+            }
+            /* FIM DAS COLUNAS */
         </style>
-        
     </head>
     <body>
         
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-md-8 center-box">
+                    
                     <div class="jumbotron">
-                        <h1 class="text-center"> <i class="fa fa-frown-o"></i> !Oops </h1>
-                        <p class="text-center"> 
-                            Página não encontrada <br /> 
-                            <span> A url requisitada ou o endereço acessado não existe. <br /> Por favor, verifique a url.</span>
-                        </p>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="public/img/simple-icons/erro404-example.png" />
+                            </div>
+                            <div class="col-md-7">
+                                <h1> !Oops </h1>
+                                <p> A página não foi encontrada. <br/> O endereço acessado não existe. <br/> Por favor, verifique a url.</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <hr />
+                    <hr/>
                     
-                    <p class="text-center"> 
-                        Copyright <i class="fa fa-copyright"></i>, Todos os direitos reservados <br />
-                        <span class="text-muted"> Designed by Maurício Porfírio </span>
-                    </p>
+                    <p class="text-center"> Copyright &COPY; 2017, simple-php &bullet; Todos os direitos reservados. </p>
                 </div>
             </div>
         </div>

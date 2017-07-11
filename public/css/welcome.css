@@ -3,16 +3,20 @@ html, body {
 }
 
 .container {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .row {
     padding: 30px;
 }
 
-.col-lg-8 {
+.col-md-8 {
     margin: 0 auto;
     float: none;
+}
+
+.jumbotron {
+    text-align: center;
 }
 
 .btn {
