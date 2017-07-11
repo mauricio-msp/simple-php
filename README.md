@@ -1,4 +1,4 @@
-![logo - simple-php - github](https://cloud.githubusercontent.com/assets/13602785/26530140/4f0a0372-43a5-11e7-8d9b-80e102fbc6bc.png)
+![logo - simple-php 2 0](https://user-images.githubusercontent.com/13602785/28047838-53644578-65c3-11e7-9ad4-441ead939c8c.png)
 
 # Sobre o simple-php
 
