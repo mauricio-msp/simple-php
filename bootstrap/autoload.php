@@ -62,7 +62,7 @@
      * -------------------------------------------------------------------------
      * 
      * DRouter é um gerenciador de rotas fácil, simples e flexível, com o 
-     * intuito de ser utilizado em aplicações web pequenas, como a nossa.
+     * intuito de ser utilizado em aplicações web pequenas.
      * 
      */
     
