@@ -5,8 +5,8 @@
      * Dependências/Configurações
      * -------------------------------------------------------------------------
      * 
-     * Aqui se encontram todas as dependências/configurações que será utilizada 
-     * no simple-php usando o DRouter. 
+     * Aqui se encontram todas as dependências/configurações que podem ser 
+     * utilizadas pelas "views".
      * 
      */
     
@@ -24,9 +24,11 @@
       * Configurações Globais
       * ------------------------------------------------------------------------
       * 
-      * Aqui você irá setar/adicionar configurações globais, no qual você deseja
-      * que a "view" ou página da aplicação tenha acesso a tal recurso.
+      * Aqui você irá setar/adicionar configurações globais, no qual todas as 
+      * "views" ou página da aplicação que irão ter acesso a tal recurso.
       * 
+      * EX: Todas as views agora serão renderizadas usando o Twig Template.
+      *  
       */
      
      $app->render->setAsGlobal([

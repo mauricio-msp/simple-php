@@ -35,7 +35,8 @@
      * Acesso ao diretório PUBLIC
      * -------------------------------------------------------------------------
      * 
-     * Retorna o endereço de acesso a pasta "public" 
+     * Retorna o endereço de acesso a pasta "/public". 
+     * 
      */
     
     function asset() : string {

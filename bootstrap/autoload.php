@@ -91,6 +91,7 @@
      * 
      * Require as páginas que são configuradas em routes/web.php para serem 
      * renderizadas com Twig Template e roteadas com o DRouter.
+     * 
      */
     
      
@@ -103,6 +104,7 @@
      * ------------------------------------------------------------------------- 
      * 
      * Executa todas as rotas criadas em routes/web.php
+     * 
      */
      
      

@@ -4,12 +4,12 @@ return [
     
     /**
      * ------------------------------------------------- -----------------------
-     * Conexões de banco de dados
+     * Conexão com o banco de dados
      * ------------------------------------------------- -----------------------
      *
-     * Aqui estão cada uma das conexões de banco de dados, configuradas para seu 
-     * aplicativo. Estes são exemplos de configuração de cada plataforma de 
-     * banco de dados.
+     * Aqui esta definido os valores para a conexão com o seu banco de dados.
+     * OBS: Os valores são definidos no arquivo ".env".
+     * 
      */
 
     'dev' => [
