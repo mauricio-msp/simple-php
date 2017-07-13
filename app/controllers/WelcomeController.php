@@ -9,7 +9,7 @@ class WelcomeController extends \app\controllers\Controller {
         echo $this->twig->render('welcome.html', [
             'title'    => 'simple-php',
             'base_url' => getenv('BASE_URL'),
-            'ano'      => date('Y'),
+            'year'     => date('Y'),
         ]);
     }
     
