@@ -25,7 +25,7 @@
            "app\\": "app/" 
         },
         "files": [
-            "config/http.php"
+            "config/address.php"
         ]
     },
     "scripts": {

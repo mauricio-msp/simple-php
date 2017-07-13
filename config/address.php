@@ -11,12 +11,12 @@
      *  
      */
 
-    function url() : string {
+    function getBaseUrl() : string {
         
         // SERVER_PROTOCOL | http
         $server_protocol = strtolower(preg_replace('/[^a-zA-Z\$]/', '', filter_input(INPUT_SERVER, 'SERVER_PROTOCOL')));
         
-        // SERVER_NAME | localhost ou 127.0.0.1
+        // SERVER_NAME | localhost ou 127.0.0.1 
         $server_name     = filter_input(INPUT_SERVER, 'SERVER_NAME');
         
         // SERVER_PORT | :8080 ou :80
@@ -26,21 +26,8 @@
         $script_name     = str_replace('/index.php', '', filter_input(INPUT_SERVER, 'SCRIPT_NAME'));
         
         // Estrutura da URL BASE
-        return "{$server_protocol}://{$server_name}{$server_port}{$script_name}";
+        return "{$server_protocol}://{$server_name}{$server_port}{$script_name}/";
     }
     
-    
-    /**
-     * -------------------------------------------------------------------------
-     * Acesso ao diretório PUBLIC
-     * -------------------------------------------------------------------------
-     * 
-     * Retorna o endereço de acesso a pasta "/public". 
-     * 
-     */
-    
-    function asset() : string {
-        return url() . '/public';
-    }
     
     

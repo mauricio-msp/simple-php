@@ -7,9 +7,9 @@ class WelcomeController extends \app\controllers\Controller {
     
     public function view() {
         echo $this->twig->render('welcome.html', [
-            'title' => 'simple-php',
-            'asset' => asset(),
-            'ano'   => date('Y'),
+            'title'    => 'simple-php',
+            'base_url' => getBaseUrl(),
+            'ano'      => date('Y'),
         ]);
     }
     
