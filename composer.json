@@ -1,7 +1,7 @@
 {
     "name": "mauricio-msp/simple-php",
-    "description": "Aplicação simples com PHP 7",
-    "keywords": ["app", "application", "php", "php7", "simple", "project", "web"],
+    "description": "Aplicação simples e rápida com PHP-7",
+    "keywords": ["php-7", "app", "application", "simple", "fast", "small", "micro-framework", "project", "web"],
     "homepage": "https://github.com/mauricio-msp/simple-php",
     "license": "MIT",
     "type": "project",
