@@ -23,10 +23,7 @@
     "autoload": {
         "psr-4": {
            "app\\": "app/" 
-        },
-        "files": [
-            "config/address.php"
-        ]
+        }
     },
     "scripts": {
         "post-root-package-install": [
