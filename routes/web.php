@@ -5,7 +5,7 @@
      * Web Routes
      * ------------------------------------------------- -----------------------
      *
-     * Aqui é onde você pode registrar rotas da web para sua aplicação.
+     * Aqui é onde você registra todas as rotas da web para sua aplicação.
      * 
      */
 
@@ -18,7 +18,8 @@
      * Web Route 404
      * -------------------------------------------------------------------------
      * 
-     * Página de erro404(personalizada).
+     * Página de erro404(personalizada). A página irá ser solicitada caso o 
+     * endereço acessado esteja incorreto ou não exista.
      * 
      */
      

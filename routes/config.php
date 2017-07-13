@@ -25,7 +25,7 @@
       * ------------------------------------------------------------------------
       * 
       * Aqui você irá setar/adicionar configurações globais, no qual todas as 
-      * "views" ou página da aplicação que irão ter acesso a tal recurso.
+      * views(páginas) da aplicação que irão ter acesso a tal recurso.
       * 
       * EX: Todas as views agora serão renderizadas usando o Twig Template.
       *  

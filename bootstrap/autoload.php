@@ -89,8 +89,7 @@
      * Registrando Renderização
      * -------------------------------------------------------------------------
      * 
-     * Require as páginas que são configuradas em routes/web.php para serem 
-     * renderizadas com Twig Template e roteadas com o DRouter.
+     * Require as páginas que são criadas em routes/web.php 
      * 
      */
     
