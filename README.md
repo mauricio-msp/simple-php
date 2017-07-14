@@ -2,7 +2,7 @@
 
 # Sobre o simple-php
 
-### Aplicação open-source, simples e rápida com PHP 7
+### Aplicação simples, rápida e pequena desenvolvida com PHP-7
 
 simple-php é uma aplicação voltada para projetos com um grau de complexidade baixo e que não requer muitos recursos que uma framework disponibiliza. Ela tem as principais funcionalidades que um projeto web possui basicamente, tais como:
 
@@ -24,7 +24,3 @@ O simple-php vai instalar todas as dependências e arquivos necessários.
 # Licença
 
 O simple-php é uma aplicação open-source licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
-
-
-
-
