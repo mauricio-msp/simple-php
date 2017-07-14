@@ -2,7 +2,7 @@
 
 # Sobre o simple-php
 
-### Aplicação simples, rápida e pequena desenvolvida com PHP-7
+### Aplicação simples e rápida desenvolvida com PHP-7
 
 simple-php é uma aplicação voltada para projetos com um grau de complexidade baixo e que não requer muitos recursos que uma framework disponibiliza. Ela tem as principais funcionalidades que um projeto web possui basicamente, tais como:
 
