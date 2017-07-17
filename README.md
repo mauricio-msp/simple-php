@@ -15,7 +15,7 @@ simple-php é uma aplicação voltada para projetos com um grau de complexidade 
 
 É recomendável que você use o [Composer](https://getcomposer.org) para instalar o simple-php.
 
-```
+``` json
 $ composer create-project mauricio-msp/simple-php [my-app-name] --prefer-dist
 ```
 
