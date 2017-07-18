@@ -20,7 +20,7 @@ return [
         'username' => getenv('DB_USERNAME'),
         'password' => getenv('DB_PASSWORD'),
         'charset'  => getenv('DB_ENCODE')
-    ],
+    ]
     
 ];
 
