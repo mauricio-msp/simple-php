@@ -12,9 +12,9 @@ abstract class Controller {
     }
     
     public function __get($key) {
-        if ($this->container->{$key}):
+        if ($this->container->{$key}){
             return $this->container->{$key};
-        endif;
+        }
     }
     
 }
