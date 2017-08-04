@@ -1,8 +1,8 @@
 ![logo - simple-php 2 0](https://user-images.githubusercontent.com/13602785/28047838-53644578-65c3-11e7-9ad4-441ead939c8c.png)
 
-# Sobre o simple-php
+# O que é o simple-php :grey_question:
 
-### Aplicação simples e rápida desenvolvida com PHP-7
+### Aplicação simples e rápida desenvolvida com PHP-7.
 
 simple-php é uma aplicação voltada para projetos com um grau de complexidade baixo e que não requer muitos recursos que uma framework disponibiliza. Ela tem as principais funcionalidades que um projeto web possui basicamente, tais como:
 
