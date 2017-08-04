@@ -21,6 +21,10 @@ $ composer create-project mauricio-msp/simple-php [my-app-name] --prefer-dist
 
 O simple-php vai instalar todas as dependências e arquivos necessários.
 
+# Após a instalação
+
+ Veja algumas configurações simples e necessárias aqui [configurações](https://github.com/mauricio-msp/simple-php/wiki/Configuração).
+
 # Licença
 
 O simple-php é uma aplicação open-source licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
