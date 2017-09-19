@@ -1,36 +1,17 @@
-html, body {
-    font-family: 'Raleway', sans-serif;
-}
-
 .container {
-    margin-top: 50px;
-}
-
-.row {
-    padding: 30px;
-}
-
-.col-md-8 {
-    margin: 0 auto;
-    float: none;
-}
+  margin-top: 90px; }
 
 .jumbotron {
-    text-align: center;
-}
+  text-align: center;
+  color: #333; }
 
-.btn {
-    background-color: #0F0050;
-    border: 1px solid #0F0050;
-    color: #FFF;
-    
-    transition: all ease-in-out 0.2s;
-}
+.btn-outline-purple {
+  background-color: #351564;
+  border: 1px solid #351564;
+  color: #FFFFFF; }
+  .btn-outline-purple:hover, .btn-outline-purple:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #351564;
+    color: #351564; }
 
-.btn:hover,
-.btn:focus {
-    background-color: #FFF;
-    border: 1px solid #0F0050;
-    color: #0F0050;
-}
-
+/*# sourceMappingURL=welcome.css.map */

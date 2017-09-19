@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,UAAW;EACP,UAAU,EAAE,IAAI;;AAGpB,UAAW;EACP,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,IAAI;;AAGf,mBAAoB;EAChB,gBAAgB,EAbJ,OAAO;EAcnB,MAAM,EAAE,iBAAwB;EAChC,KAAK,EAdS,OAAO;EAgBrB,oDAAiB;IACb,gBAAgB,EAjBN,OAAO;IAkBjB,MAAM,EAAE,iBAAwB;IAChC,KAAK,EApBG,OAAO",
+"sources": ["../scss/welcome.scss"],
+"names": [],
+"file": "welcome.css"
+}
