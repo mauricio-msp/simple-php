@@ -1,17 +1,2 @@
-.container {
-  margin-top: 90px; }
-
-.jumbotron {
-  text-align: center;
-  color: #333; }
-
-.btn-outline-purple {
-  background-color: #351564;
-  border: 1px solid #351564;
-  color: #FFFFFF; }
-  .btn-outline-purple:hover, .btn-outline-purple:focus {
-    background-color: #FFFFFF;
-    border: 1px solid #351564;
-    color: #351564; }
-
+.container{margin-top:90px}.jumbotron{text-align:center;color:#333}.btn-outline-purple{background-color:#351564;border:1px solid #351564;color:#fff}.btn-outline-purple:hover,.btn-outline-purple:focus{background-color:#fff;border:1px solid #351564;color:#351564}
 /*# sourceMappingURL=welcome.css.map */
