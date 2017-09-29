@@ -1,8 +1,13 @@
+Options +FollowSymLinks
 Options -Indexes
 
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f [OR]
-RewriteCond %{REQUEST_FILENAME} \.env$
-RewriteCond %{REQUEST_FILENAME} !-d
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
 
-RewriteRule ^(.*)$ index.php/$1 [QSA,L]
+<Files ~ "^\.(htaccess|env|gitignore)$">
+    deny from all
+</Files>
