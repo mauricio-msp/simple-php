@@ -43,16 +43,16 @@
      
     
      $db = require dir['config'] . 'database.php';
-
+     
      $cfg = \ActiveRecord\Config::instance();
      $cfg->set_model_directory(dir['models']);
      $cfg->set_connections(['development' => 
-       $db['dev']['driver']   . '://' . 
-       $db['dev']['username'] . ':' . 
-       $db['dev']['password'] . '@' . 
-       $db['dev']['host']     . '/' . 
-       $db['dev']['database'] . '?charset=' . 
-       $db['dev']['charset']
+       $db['mysql']['driver']   . '://' . 
+       $db['mysql']['username'] . ':' . 
+       $db['mysql']['password'] . '@' . 
+       $db['mysql']['host']     . '/' . 
+       $db['mysql']['database'] . '?charset=' . 
+       $db['mysql']['charset']
      ]);
      
     

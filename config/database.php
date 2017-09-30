@@ -12,7 +12,7 @@ return [
      * 
      */
 
-    'dev' => [
+    'mysql' => [
         'driver'   => getenv('DB_DRIVER'),
         'host'     => getenv('DB_HOST'),
         'port'     => getenv('DB_PORT'),  
@@ -20,6 +20,21 @@ return [
         'username' => getenv('DB_USERNAME'),
         'password' => getenv('DB_PASSWORD'),
         'charset'  => getenv('DB_ENCODE')
+    ],
+    
+    'pgsql' => [
+        'driver'   => getenv('DB_DRIVER'),
+        'host'     => getenv('DB_HOST'),
+        'port'     => getenv('DB_PORT'),  
+        'database' => getenv('DB_DATABASE'),  
+        'username' => getenv('DB_USERNAME'),
+        'password' => getenv('DB_PASSWORD'),
+        'charset'  => getenv('DB_ENCODE')
+    ],
+    
+    'sqlite' => [
+        'driver'   => getenv('DB_DRIVER'),
+        'database' => getenv('DB_DATABASE')  
     ]
     
 ];
