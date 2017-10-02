@@ -1,7 +1,7 @@
 <?php
     
     define('dir', [
-        'raiz'        => '/../',
+        'root'        => '/../',  
         'app'         => __DIR__ . '/app/',
         'controllers' => __DIR__ . '/app/controllers/',
         'models'      => __DIR__ . '/app/models/',

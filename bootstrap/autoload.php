@@ -26,10 +26,10 @@
      */
     
     
-     $env = new \Dotenv\Dotenv(dir['bootstrap'] . dir['raiz'], '.env');
+     $env = new \Dotenv\Dotenv(dir['bootstrap'] . dir['root']);
      $env->load();
-    
-    
+     
+   
     /**
      * -------------------------------------------------------------------------
      * PHP ActiveRecord
