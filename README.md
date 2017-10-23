@@ -1,4 +1,4 @@
-![logo - simple-php 2 0](https://user-images.githubusercontent.com/13602785/28047838-53644578-65c3-11e7-9ad4-441ead939c8c.png)
+![logo - simple-php 3 0](https://user-images.githubusercontent.com/13602785/31906836-8130afd6-b808-11e7-8ffa-44df379de480.png)
 
 # O que é o simple-php :grey_question:
 
