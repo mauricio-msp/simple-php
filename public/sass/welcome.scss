@@ -1,6 +1,3 @@
-$primary-color: #090051;
-$secondary-color: #FFFFFF;
-
 .container {
     margin-top: 90px;
 }
@@ -9,17 +6,3 @@ $secondary-color: #FFFFFF;
     text-align: center;
     color: #333;
 }
-
-.btn-outline-purple {
-    background-color: $primary-color;
-    border: 1px solid $primary-color;
-    color: $secondary-color;
-    
-    &:hover, &:focus {
-        background-color: $secondary-color;
-        border: 1px solid $primary-color;
-        color: $primary-color;
-    }
-}
-
-

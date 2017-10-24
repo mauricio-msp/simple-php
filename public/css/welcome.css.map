@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAGA,UAAW,CACP,UAAU,CAAE,IAAI,CAGpB,UAAW,CACP,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,IAAI,CAGf,mBAAoB,CAChB,gBAAgB,CAbJ,OAAO,CAcnB,MAAM,CAAE,iBAAwB,CAChC,KAAK,CAdS,IAAO,CAgBrB,mDAAiB,CACb,gBAAgB,CAjBN,IAAO,CAkBjB,MAAM,CAAE,iBAAwB,CAChC,KAAK,CApBG,OAAO",
-"sources": ["../scss/welcome.scss"],
+"mappings": "AAAA,UAAW,CACP,UAAU,CAAE,IAAI,CAGpB,UAAW,CACP,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,IAAI",
+"sources": ["../sass/welcome.scss"],
 "names": [],
 "file": "welcome.css"
 }
